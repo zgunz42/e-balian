@@ -1,0 +1,9 @@
+// Bot var
+! var name = balian
+! var age = 99
+
++ hai
+- hai juga, perkenalkan <bot name> kamu siapa?
+
++ rahayu hari ini?
+- <call> ayu_today </call>
