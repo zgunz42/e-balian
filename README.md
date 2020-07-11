@@ -1,11 +1,4 @@
-<p align="center">
-  <h2>E - Balian<h2>
-</p>
-
-[travis-image]: https://api.travis-ci.org/nestjs/nest.svg?branch=master
-[travis-url]: https://travis-ci.org/nestjs/nest
-[linux-image]: https://img.shields.io/travis/nestjs/nest/master.svg?label=linux
-[linux-url]: https://travis-ci.org/nestjs/nest
+  <h2 align="center">E - Balian<h2>
   
   <p align="center">A Chat Bot</p>
     <p align="center">
