@@ -7,12 +7,11 @@ export class RobotController {
 
     @Get()
     haiRobot(): string {
-        this.robotServ.loadReply(() => console.log('ready'))
         return 'Hi Robot';
     }
 
     @Get('chat')
-    chat(@Query() message: string): Promise<string> {
-        return this.robotServ.getReply('adi', message);
+    chat(@Query('message') message: string): Promise<string> {
+        return Promise.resolve('chat')
     }
 }

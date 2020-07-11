@@ -1,13 +1,19 @@
 import * as RiveScript from 'rivescript';
 import * as path from 'path';
+import { Action } from './interfaces/action.interface';
 
-export abstract class BalianBot {
+export class Robot {
    rs: RiveScript.default;
     constructor() {
         this.rs = new (RiveScript as any)({
             utf8: true
         })
    }
+   
+   addAction(command: string, action: Action) {
+       this.rs.setSubroutine(command, action.handle)
+   }
+
    loadReply(onReady: () => void): void {
         const filePath = path.resolve("./src/robot/brains/balian.rive")
         this.rs.loadFile([
