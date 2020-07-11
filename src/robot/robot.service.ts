@@ -1,7 +1,7 @@
 import { Injectable } from '@nestjs/common';
-import {BalianBot} from './ebalian';
+import {Robot} from './robot';
 
 @Injectable()
-export class RobotService extends BalianBot {
+export class RobotService {
     
 }
