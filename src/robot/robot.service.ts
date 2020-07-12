@@ -6,7 +6,7 @@ import { CrawlService } from 'src/crawl/crawl.service';
 export class RobotService {
     @Inject('ROBOT')
     private readonly robot: Robot
-    getBotMessage(message) {
-        return this.robot.getReply('adi', message)
+    getBotMessage(name, message) {
+        return this.robot.getReply(name, message)
     }
 }

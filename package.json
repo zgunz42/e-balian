@@ -30,6 +30,7 @@
     "rimraf": "^3.0.2",
     "rivescript": "^2.1.0",
     "rxjs": "^6.5.4",
+    "telegraf": "^3.38.0",
     "x-ray": "^2.3.4"
   },
   "devDependencies": {

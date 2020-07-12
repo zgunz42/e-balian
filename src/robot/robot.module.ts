@@ -13,6 +13,7 @@ const actionServices = action.map(s => s.action)
 
 @Module({
   imports: [CrawlModule],
+  exports: [RobotService],
   controllers: [RobotController],
   providers: [
       {
