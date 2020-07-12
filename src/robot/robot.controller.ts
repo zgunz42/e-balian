@@ -12,6 +12,6 @@ export class RobotController {
 
     @Get('chat')
     chat(@Query('message') message: string): Promise<string> {
-        return Promise.resolve('chat')
+        return this.robotServ.getBotMessage(message);
     }
 }

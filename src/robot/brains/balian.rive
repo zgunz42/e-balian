@@ -5,5 +5,8 @@
 + hai
 - hai juga, perkenalkan <bot name> kamu siapa?
 
-+ rahayu hari ini?
++ umur
+- umur saya <bot age>
+
++ rahayu hari ini
 - <call> ayu_today </call>

@@ -11,7 +11,7 @@ export class Robot {
    }
    
    addAction(command: string, action: Action) {
-       this.rs.setSubroutine(command, action.handle)
+       this.rs.setSubroutine(command, action.handle.bind(action))
    }
 
    loadReply(onReady: () => void): void {

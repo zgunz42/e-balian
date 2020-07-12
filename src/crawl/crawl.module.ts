@@ -2,8 +2,7 @@ import { Module } from '@nestjs/common';
 import { CrawlService } from './crawl.service';
 
 @Module({
-  imports: [],
-  exports: [CrawlService],
   providers: [CrawlService],
+  exports: [CrawlService],
 })
 export class CrawlModule {}

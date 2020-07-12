@@ -6,6 +6,7 @@ import {RobotModule} from './robot/robot.module';
 
 @Module({
   imports: [CrawlModule, RobotModule],
+  exports: [CrawlModule],
   controllers: [AppController],
   providers: [AppService],
 })
