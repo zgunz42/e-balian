@@ -12,8 +12,13 @@ export class Chatbot {
         this.chatbot.help((ctx: Context) => ctx.reply('Send me a sticker'))
     }
 
+    callback(path) {
+        return this.chatbot.webhookCallback(path);
+    }
+
     launch() {
-        this.chatbot.launch()
+        console.log(`${process.env.VERCEL_URL}bot_telegram`)
+        this.chatbot.telegram.setWebhook(`${process.env.VERCEL_URL}/bot_telegram`)
     }
 
     onMessage(callback: (user, message) => string | Promise<string>) {
