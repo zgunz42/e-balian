@@ -20,4 +20,4 @@ jobs:
       env:
         CI: true
         ZEIT_TOKEN: ${{ secrets.ZEIT_TOKEN }} 
-        BOT_KEY: ${{ secrets.BOT_KEY }}
+        BOT_TOKEN: ${{ secrets.BOT_KEY }}
