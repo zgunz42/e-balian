@@ -4,26 +4,20 @@ on: [push]
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
-
-    strategy:
-      matrix:
-        node-version: [8.x, 10.x, 12.x]
-
     steps:
-    - uses: actions/checkout@v1
+    - uses: actions/checkout@v2
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v1
       with:
-        node-version: ${{ matrix.node-version }}
+        node-version: '12.x'
     - name: Install Now Global
       run: npm install -g now
     - name: Deploy to ZEIT Now
       run: |
-        npm ci
-        npm run build --if-present
-        npm run deploy
+        yarn install --frozen-lockfile
+        yarn build --if-present
+        yarn deploy
       env:
         CI: true
         ZEIT_TOKEN: ${{ secrets.ZEIT_TOKEN }} 
