@@ -16,7 +16,6 @@ jobs:
     - name: Deploy to ZEIT Now
       run: |
         yarn install --frozen-lockfile
-        yarn build --if-present
         yarn deploy
       env:
         CI: true
