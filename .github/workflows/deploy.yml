@@ -12,7 +12,7 @@ jobs:
       with:
         node-version: '12.x'
     - name: Install Now Global
-      run: npm install -g now
+      run: npm install -g vercel
     - name: Deploy to ZEIT Now
       run: |
         yarn install --frozen-lockfile
@@ -20,3 +20,4 @@ jobs:
       env:
         CI: true
         ZEIT_TOKEN: ${{ secrets.ZEIT_TOKEN }} 
+        BOT_KEY: ${{ secrets.BOT_KEY }}
