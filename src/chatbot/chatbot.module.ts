@@ -13,7 +13,7 @@ const teleModule = TelegrafModule.forRootAsync({
     token: configService.get<string>('bot.token'),
     launchOptions: {
       webhook: {
-        domain: 'https://3000-a5139589-9f6b-461d-b190-d885e900d37e.ws-us02.gitpod.io',
+        domain: process.env.WEB_DOMAIN,
         hookPath: '/bot-telegram',
       },
     },
