@@ -1,5 +1,5 @@
-import RiveScript from "rivescript";
+import RiveScript from 'rivescript';
 
 export interface Action {
-    handle(rs: RiveScript, args: string[]):  string | Promise<string>;
+  handle(rs: RiveScript, args: string[]): string | Promise<string>;
 }

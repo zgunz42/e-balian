@@ -3,15 +3,15 @@ import { RobotService } from './robot.service';
 
 @Controller('robot')
 export class RobotController {
-    constructor(private robotServ: RobotService) {}
+  constructor(private robotServ: RobotService) {}
 
-    @Get()
-    haiRobot(): string {
-        return 'Hi Robot';
-    }
+  @Get()
+  haiRobot(): string {
+    return 'Hi Robot';
+  }
 
-    @Get('chat')
-    chat(@Query('message') message: string): Promise<string> {
-        return this.robotServ.getBotMessage('test', message);
-    }
+  @Get('chat')
+  chat(@Query('message') message: string): Promise<string> {
+    return this.robotServ.getBotMessage('test', message);
+  }
 }
