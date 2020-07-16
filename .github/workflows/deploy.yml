@@ -21,3 +21,4 @@ jobs:
         CI: true
         ZEIT_TOKEN: ${{ secrets.ZEIT_TOKEN }} 
         BOT_TOKEN: ${{ secrets.BOT_KEY }}
+        WEB_DOMAIN: ${{ secrets.WEB_DOMAIN }}
