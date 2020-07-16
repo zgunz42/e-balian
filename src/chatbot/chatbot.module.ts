@@ -1,33 +1,29 @@
-import { Module, NestModule, Inject } from "@nestjs/common";
-import { teleBot } from "./config";
-import { Chatbot } from "./chatbot";
-import { RobotModule } from "src/robot/robot.module";
-import { RobotService } from "src/robot/robot.service";
-import { ChatbotMiddleware } from "./chatbot.middleware";
+import { Module, OnModuleInit, Logger } from '@nestjs/common';
+import { ModuleRef } from '@nestjs/core';
+import { ConfigModule, ConfigService } from '@nestjs/config';
+import { TelegrafModule } from 'nestjs-telegraf';
+import botConfig from './bot.config';
+import { TelegrafConfigService } from './telegraf-config.service';
+import { ChatbotService } from './chatbot.service';
+import { RobotModule } from 'src/robot/robot.module';
+
+const teleModule = TelegrafModule.forRootAsync({
+  imports: [ConfigModule.forFeature(botConfig)],
+  useFactory: async (configService: ConfigService) => ({
+    token: configService.get<string>('bot.token'),
+    launchOptions: {
+      webhook: {
+        domain: process.env.WEB_DOMAIN,
+        hookPath: '/bot-telegram',
+      },
+    },
+  }),
+  inject: [ConfigService],
+});
 
 @Module({
-    imports: [RobotModule],
-    providers: [
-        {
-            provide: 'teleBot',
-            useValue: teleBot
-        }, {
-            provide: 'chatbot',
-            useFactory: (telebot, robot: RobotService) => {
-                const chatbot = new Chatbot(teleBot)
-                chatbot.config()
-                chatbot.onMessage(robot.getBotMessage.bind(robot))
-                chatbot.launch()
-                return chatbot;
-            },
-            inject: ['teleBot', RobotService]
-        }
-    ]
+  imports: [teleModule, RobotModule],
+  providers: [ChatbotService],
+  exports: [ChatbotService, TelegrafModule]
 })
-export class ChatbotModule implements NestModule {
-    
-    configure(consumer: import("@nestjs/common").MiddlewareConsumer) {
-        consumer
-      .apply(ChatbotMiddleware).forRoutes('bot_telegram');
-    }
-}
+export class ChatbotModule {}
