@@ -14,7 +14,7 @@ export class Chatbot {
   launch() {
     this.chatbot.launch();
   }
-
+  
   onMessage(callback: (user, message) => string | Promise<string>) {
     this.chatbot.on('text', async (ctx: Context) => {
       ctx.reply(await callback(ctx.chat.username, ctx.message.text));
