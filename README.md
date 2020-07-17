@@ -4,6 +4,7 @@
   <p align="center">A Chat Bot</p>
 
 [![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/zgunz42/e-balian)
+![Deploy](https://github.com/zgunz42/e-balian/workflows/Deploy/badge.svg)
 
 ## Description
 
