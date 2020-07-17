@@ -52,4 +52,4 @@ paypal at adi_gunawan@live.com
 
 ## License
 
-  Nest is [MIT licensed](LICENSE).
+  Ebalian is [MIT licensed](LICENSE).
