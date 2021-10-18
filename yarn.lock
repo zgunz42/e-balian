@@ -6250,10 +6250,10 @@ ripemd160@^2.0.0, ripemd160@^2.0.1:
     hash-base "^3.0.0"
     inherits "^2.0.1"
 
-rivescript@^2.1.0:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/rivescript/-/rivescript-2.1.0.tgz#e2d59ed955989bd0cf6a73bd12aa70a238f415f6"
-  integrity sha512-ul+pfib6ZO8vpcSJHOTP68OiWXQj6RH9ZPLzz5sM4r1eO1KZF8fjxTlP8tTas1b59wVNNxcKvU6u/I9I5zMJKg==
+rivescript@2.2.0:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/rivescript/-/rivescript-2.2.0.tgz#348fca5fcd55bdfa51f3a5155998374226ff9593"
+  integrity sha512-sL1c0snpNfB/DKoEQEA+8VpfXQJG/bwELzNLg2deQYqIANWOqvc4+bBF14YnCZLjNdAP8IPu/byV2yNZq5pWSw==
   dependencies:
     babel-loader "^7.1.5"
     babel-polyfill "^6.26.0"

@@ -31,7 +31,7 @@
     "node-telegram-bot-api": "^0.50.0",
     "reflect-metadata": "^0.1.13",
     "rimraf": "^3.0.2",
-    "rivescript": "^2.1.0",
+    "rivescript": "2.2.0",
     "rxjs": "^6.5.4",
     "x-ray": "^2.3.4"
   },
