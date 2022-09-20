@@ -11,7 +11,7 @@ http://t.me/mybalian_bot
 
 ## Description
 
-ChatBot 
+ChatBot  Balian
 
 ## Installation
 
