@@ -648,9 +648,9 @@
     "@sinonjs/commons" "^1.7.0"
 
 "@types/accepts@*":
-  version "1.3.5"
-  resolved "https://registry.yarnpkg.com/@types/accepts/-/accepts-1.3.5.tgz#c34bec115cfc746e04fe5a059df4ce7e7b391575"
-  integrity sha512-jOdnI/3qTpHABjM5cx1Hc0sKsPoYCp+DP/GJRGtDlPd7fiV9oXGGIcjW/ZOxLIvjGz8MA+uMZI9metHlgqbgwQ==
+  version "1.3.7"
+  resolved "https://registry.yarnpkg.com/@types/accepts/-/accepts-1.3.7.tgz#3b98b1889d2b2386604c2bbbe62e4fb51e95b265"
+  integrity sha512-Pay9fq2lM2wXPWbteBsRAGiWH2hig4ZE2asK+mm7kUzlxRTfL961rj89I6zV/E3PcIkDqyuBEcMxFT7rccugeQ==
   dependencies:
     "@types/node" "*"
 
@@ -693,9 +693,9 @@
     "@babel/types" "^7.3.0"
 
 "@types/bluebird@*":
-  version "3.5.32"
-  resolved "https://registry.yarnpkg.com/@types/bluebird/-/bluebird-3.5.32.tgz#381e7b59e39f010d20bbf7e044e48f5caf1ab620"
-  integrity sha512-dIOxFfI0C+jz89g6lQ+TqhGgPQ0MxSnh/E4xuC0blhFtyW269+mPG5QeLgbdwst/LvdP8o1y0o/Gz5EHXLec/g==
+  version "3.5.42"
+  resolved "https://registry.yarnpkg.com/@types/bluebird/-/bluebird-3.5.42.tgz#7ec05f1ce9986d920313c1377a5662b1b563d366"
+  integrity sha512-Jhy+MWRlro6UjVi578V/4ZGNfeCOcNCp0YaFNIUGFKlImowqwb1O/22wDVk3FDGMLqxdpOV3qQHD5fPEH4hK6A==
 
 "@types/body-parser@*":
   version "1.19.0"
@@ -754,9 +754,9 @@
     "@types/node" "*"
 
 "@types/http-context@*":
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/@types/http-context/-/http-context-1.1.0.tgz#92bd4bd98ded72281749c766e4861aed01cf18ec"
-  integrity sha512-DzLWDPHVnuyovQbXCyIBxTsF75oqF1PrS9a5C79YIM33ryzzYsj0hFr8S55do+G64IAHaP3wnmaNdAn7nYIN4g==
+  version "1.1.3"
+  resolved "https://registry.yarnpkg.com/@types/http-context/-/http-context-1.1.3.tgz#9dc14a0b1b7fa7d49c73279ba72813c848d32a2f"
+  integrity sha512-f5+xW3jLf1kdBTYkzmtr6IFf1VRui+Ox0f6+oi2rmEfWeQN6EBoW6Ogil8rx6k+o1Mvtj7+BkUzRggMAeMcJVA==
   dependencies:
     "@types/accepts" "*"
     "@types/node" "*"
@@ -805,9 +805,11 @@
   integrity sha512-4kPlzbljFcsttWEq6aBW0OZe6BDajAmyvr2xknBG92tejQnvdGtT9+kXSZ580DqpxY9qG2xeQVF9Dq0ymUTo5Q==
 
 "@types/node@*":
-  version "14.0.20"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-14.0.20.tgz#0da05cddbc761e1fa98af88a17244c8c1ff37231"
-  integrity sha512-MRn/NP3dee8yL5QhbSA6riuwkS+UOcsPUMOIOG3KMUQpuor/2TopdRBu8QaaB4fGU+gz/bzyDWt0FtUbeJ8H1A==
+  version "22.20.2"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-22.20.2.tgz#daae777b5f5965a587f50cc80d5364c2ddf27e36"
+  integrity sha512-xlvWf4Vs9n1PEVYwP1n4vvG07M6y8WgvJ2t0vbrWTmijsIHp1cS+uJ2kMIRdY3nHZK0nCYKrPeD171+SzF4/zw==
+  dependencies:
+    undici-types "~6.21.0"
 
 "@types/node@^13.9.1":
   version "13.13.13"
@@ -906,16 +908,16 @@
     source-map "^0.6.0"
 
 "@types/x-ray-crawler@*":
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/@types/x-ray-crawler/-/x-ray-crawler-2.0.0.tgz#60cc6c4bcfe04d21c1738df01eaed0326aa9273b"
-  integrity sha512-cYUzayLZSVljwlacJV24Wcjdquti4dNP7CgCoeQJcFqsaJZm9HEOPvvEtZZjIj7wLMnxnDPOuxpLNDSW5UM44w==
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/@types/x-ray-crawler/-/x-ray-crawler-2.0.3.tgz#8cec1a2902c2a1b391fc133c2dc4207354c698b0"
+  integrity sha512-sepl1CnyDYqXJl3NgVMEN84+jqHwOY2//aUsY/Wu7Fxn5JTEbuuTWA8+tbdS755b7lDC6XNfSpygruVUMMZ1SA==
   dependencies:
     "@types/http-context" "*"
 
 "@types/x-ray@^2.3.3":
-  version "2.3.3"
-  resolved "https://registry.yarnpkg.com/@types/x-ray/-/x-ray-2.3.3.tgz#464ed09e30cc0a84ca62de5d17e7f796afa102ea"
-  integrity sha512-sLA+nxvLy5y7LjikHTJRrRhYRmTA+9RP1MxG1Uhi3Dy6k7zxawdwKRDTwwM7iI07v9GZ0H7MTqp9h5M+LMeA7Q==
+  version "2.3.6"
+  resolved "https://registry.yarnpkg.com/@types/x-ray/-/x-ray-2.3.6.tgz#8f4d8519c59b39f98612cbacee617c4cae51cc07"
+  integrity sha512-sQGiKakimB9CZIXEanRx4FW/d/R89G++gc5FeRUgyLySInCiPvYU8gjBRRV4IX8tPChguM7ieFrTKM5qZJg7vw==
   dependencies:
     "@types/bluebird" "*"
     "@types/node" "*"
@@ -7241,6 +7243,11 @@ typescript@^3.6.4, typescript@^3.7.4:
   version "3.9.6"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.9.6.tgz#8f3e0198a34c3ae17091b35571d3afd31999365a"
   integrity sha512-Pspx3oKAPJtjNwE92YS05HQoY7z2SFyOpHo9MqJor3BXAGNaPUs83CuVp9VISFkSjyRfiTpmKuAYGJB7S7hOxw==
+
+undici-types@~6.21.0:
+  version "6.21.0"
+  resolved "https://registry.yarnpkg.com/undici-types/-/undici-types-6.21.0.tgz#691d00af3909be93a7faa13be61b3a5b50ef12cb"
+  integrity sha512-iwDZqg0QAGrg9Rav5H4n0M64c3mkR59cJ6wQp+7C4nI0gsmExaedaYLNO44eT4AtBBwjbTiGPMlt2Md0T9H9JQ==
 
 union-value@^1.0.0:
   version "1.0.1"
